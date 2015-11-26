@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D4D512101C06A02600D8A8B1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5120F1C06A02600D8A8B1 /* main.swift */; };
 		D4D512181C06A44800D8A8B1 /* YJSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D512171C06A44800D8A8B1 /* YJSingleton.swift */; };
+		D4D5121D1C06D67E00D8A8B1 /* YJPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5121C1C06D67E00D8A8B1 /* YJPrototype.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,12 @@
 		D4D5120C1C06A02600D8A8B1 /* DesignPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D5120F1C06A02600D8A8B1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D4D512171C06A44800D8A8B1 /* YJSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJSingleton.swift; sourceTree = "<group>"; };
+		D4D512191C06D60D00D8A8B1 /* 单例模式(Singleton).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "单例模式(Singleton).png"; sourceTree = "<group>"; };
+		D4D5121C1C06D67E00D8A8B1 /* YJPrototype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJPrototype.swift; sourceTree = "<group>"; };
+		D4D5121E1C06D75C00D8A8B1 /* 原型模式(Prototype).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "原型模式(Prototype).png"; sourceTree = "<group>"; };
+		D4D5121F1C06D76700D8A8B1 /* 建造者模式(Builder).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "建造者模式(Builder).png"; sourceTree = "<group>"; };
+		D4D512201C06D76D00D8A8B1 /* 工厂方法(FactoryMethod).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "工厂方法(FactoryMethod).png"; sourceTree = "<group>"; };
+		D4D512211C06D77300D8A8B1 /* 抽象工厂(Abstract Factory) .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "抽象工厂(Abstract Factory) .png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +75,12 @@
 		D4D512161C06A40300D8A8B1 /* 创建型模式 */ = {
 			isa = PBXGroup;
 			children = (
+				D4D512211C06D77300D8A8B1 /* 抽象工厂(Abstract Factory) .png */,
+				D4D512191C06D60D00D8A8B1 /* 单例模式(Singleton).png */,
+				D4D512201C06D76D00D8A8B1 /* 工厂方法(FactoryMethod).png */,
+				D4D5121F1C06D76700D8A8B1 /* 建造者模式(Builder).png */,
+				D4D5121E1C06D75C00D8A8B1 /* 原型模式(Prototype).png */,
+				D4D5121C1C06D67E00D8A8B1 /* YJPrototype.swift */,
 				D4D512171C06A44800D8A8B1 /* YJSingleton.swift */,
 			);
 			name = "创建型模式";
@@ -132,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4D512181C06A44800D8A8B1 /* YJSingleton.swift in Sources */,
+				D4D5121D1C06D67E00D8A8B1 /* YJPrototype.swift in Sources */,
 				D4D512101C06A02600D8A8B1 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +266,7 @@
 				D4D512151C06A02600D8A8B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
