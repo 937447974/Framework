@@ -12,20 +12,20 @@
 import Cocoa
 
 /// 单例
-private class YJSingleton  {
+private class Singleton  {
 
     init() {
         print("创建\(__FILE__)")
     }
     
-    class func getInstance() -> YJSingleton {
+    class func getInstance() -> Singleton {
         // 只执行一次
         struct Static {
             static var onceToken: dispatch_once_t = 0
-            static var value: YJSingleton?
+            static var value: Singleton?
         }
         dispatch_once(&Static.onceToken) { () -> Void in
-            Static.value = YJSingleton()
+            Static.value = Singleton()
         }
         return Static.value!
     }
@@ -36,9 +36,9 @@ private class YJSingleton  {
 class YJSingletonTest: YJTestProtocol {
     
     func test() {
-        var singleton = YJSingleton.getInstance()
+        var singleton = Singleton.getInstance()
         print(singleton)
-        singleton = YJSingleton.getInstance()
+        singleton = Singleton.getInstance()
         print(singleton)
     }
     

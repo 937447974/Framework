@@ -10,6 +10,9 @@
 		D4D512101C06A02600D8A8B1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5120F1C06A02600D8A8B1 /* main.swift */; };
 		D4D512181C06A44800D8A8B1 /* YJSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D512171C06A44800D8A8B1 /* YJSingleton.swift */; };
 		D4D5121D1C06D67E00D8A8B1 /* YJPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5121C1C06D67E00D8A8B1 /* YJPrototype.swift */; };
+		D4D512241C06D96100D8A8B1 /* YJFactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D512231C06D96100D8A8B1 /* YJFactoryMethod.swift */; };
+		D4D512261C06DDE000D8A8B1 /* YJBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D512251C06DDE000D8A8B1 /* YJBuilder.swift */; };
+		D4D512281C06E25F00D8A8B1 /* YJAbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D512271C06E25F00D8A8B1 /* YJAbstractFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,7 +36,10 @@
 		D4D5121E1C06D75C00D8A8B1 /* 原型模式(Prototype).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "原型模式(Prototype).png"; sourceTree = "<group>"; };
 		D4D5121F1C06D76700D8A8B1 /* 建造者模式(Builder).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "建造者模式(Builder).png"; sourceTree = "<group>"; };
 		D4D512201C06D76D00D8A8B1 /* 工厂方法(FactoryMethod).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "工厂方法(FactoryMethod).png"; sourceTree = "<group>"; };
-		D4D512211C06D77300D8A8B1 /* 抽象工厂(Abstract Factory) .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "抽象工厂(Abstract Factory) .png"; sourceTree = "<group>"; };
+		D4D512221C06D92300D8A8B1 /* 抽象工厂(Abstract Factory).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "抽象工厂(Abstract Factory).png"; sourceTree = "<group>"; };
+		D4D512231C06D96100D8A8B1 /* YJFactoryMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJFactoryMethod.swift; sourceTree = "<group>"; };
+		D4D512251C06DDE000D8A8B1 /* YJBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJBuilder.swift; sourceTree = "<group>"; };
+		D4D512271C06E25F00D8A8B1 /* YJAbstractFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJAbstractFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +81,14 @@
 		D4D512161C06A40300D8A8B1 /* 创建型模式 */ = {
 			isa = PBXGroup;
 			children = (
-				D4D512211C06D77300D8A8B1 /* 抽象工厂(Abstract Factory) .png */,
+				D4D512221C06D92300D8A8B1 /* 抽象工厂(Abstract Factory).png */,
 				D4D512191C06D60D00D8A8B1 /* 单例模式(Singleton).png */,
 				D4D512201C06D76D00D8A8B1 /* 工厂方法(FactoryMethod).png */,
 				D4D5121F1C06D76700D8A8B1 /* 建造者模式(Builder).png */,
 				D4D5121E1C06D75C00D8A8B1 /* 原型模式(Prototype).png */,
+				D4D512271C06E25F00D8A8B1 /* YJAbstractFactory.swift */,
+				D4D512251C06DDE000D8A8B1 /* YJBuilder.swift */,
+				D4D512231C06D96100D8A8B1 /* YJFactoryMethod.swift */,
 				D4D5121C1C06D67E00D8A8B1 /* YJPrototype.swift */,
 				D4D512171C06A44800D8A8B1 /* YJSingleton.swift */,
 			);
@@ -144,9 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D512241C06D96100D8A8B1 /* YJFactoryMethod.swift in Sources */,
+				D4D512281C06E25F00D8A8B1 /* YJAbstractFactory.swift in Sources */,
 				D4D512181C06A44800D8A8B1 /* YJSingleton.swift in Sources */,
 				D4D5121D1C06D67E00D8A8B1 /* YJPrototype.swift in Sources */,
 				D4D512101C06A02600D8A8B1 /* main.swift in Sources */,
+				D4D512261C06DDE000D8A8B1 /* YJBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

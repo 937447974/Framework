@@ -36,11 +36,19 @@ class YJTest {
 }
 
 let test = YJTest()
-// 创建型模式
-print("\n单例模式测试")
+
+print("创建型模式")
+print("\n单例模式")
 test.testDesignPattern(YJSingletonTest())
-print("\n原型模式测试")
+print("\n原型模式")
 test.testDesignPattern(YJPrototypeTest())
+print("\n建造者模式")
+test.testDesignPattern(YJBuilderTest())
+print("\n工厂方法")
+test.testDesignPattern(YJFactoryMethodTest())
+print("\n抽象工厂")
+test.testDesignPattern(YJAbstractFactoryTest())
+
 
 
 
