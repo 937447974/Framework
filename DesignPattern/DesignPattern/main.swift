@@ -11,7 +11,7 @@
 
 import Foundation
 
-/// 测试代理
+/// 测试协议
 protocol YJTestProtocol {
     
     /// 测试

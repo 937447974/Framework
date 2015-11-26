@@ -13,7 +13,7 @@ import Cocoa
 
 /// 单例
 private class Singleton  {
-
+    
     init() {
         print("创建\(__FILE__)")
     }
@@ -29,7 +29,7 @@ private class Singleton  {
         }
         return Static.value!
     }
-
+    
 }
 
 /// 单例模式测试

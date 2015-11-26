@@ -61,6 +61,17 @@
 		D4D512391C0700C600D8A8B1 /* YJFlyweight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJFlyweight.swift; sourceTree = "<group>"; };
 		D4D5123B1C0702F900D8A8B1 /* YJDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJDecorator.swift; sourceTree = "<group>"; };
 		D4D5123D1C07084700D8A8B1 /* YJComposite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJComposite.swift; sourceTree = "<group>"; };
+		D4D512401C0732AC00D8A8B1 /* 备忘录模式(Memento).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "备忘录模式(Memento).png"; sourceTree = "<group>"; };
+		D4D512411C0732AC00D8A8B1 /* 策略模式(Strategy).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "策略模式(Strategy).png"; sourceTree = "<group>"; };
+		D4D512421C0732AC00D8A8B1 /* 迭代器模式(Iterator).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "迭代器模式(Iterator).png"; sourceTree = "<group>"; };
+		D4D512431C0732AC00D8A8B1 /* 访问者模式(Visitor).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "访问者模式(Visitor).png"; sourceTree = "<group>"; };
+		D4D512441C0732AC00D8A8B1 /* 观察者模式(Observer).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "观察者模式(Observer).png"; sourceTree = "<group>"; };
+		D4D512451C0732AC00D8A8B1 /* 解释器模式(Interpreter).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "解释器模式(Interpreter).png"; sourceTree = "<group>"; };
+		D4D512461C0732AC00D8A8B1 /* 命令模式(Command).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "命令模式(Command).png"; sourceTree = "<group>"; };
+		D4D512471C0732AC00D8A8B1 /* 模板方法(TemplateMethod).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "模板方法(TemplateMethod).png"; sourceTree = "<group>"; };
+		D4D512481C0732AC00D8A8B1 /* 责任链模式 (COR).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "责任链模式 (COR).png"; sourceTree = "<group>"; };
+		D4D512491C0732AC00D8A8B1 /* 中介者模式(Mediator).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中介者模式(Mediator).png"; sourceTree = "<group>"; };
+		D4D5124A1C0732AC00D8A8B1 /* 状态模式(State).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "状态模式(State).png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +104,10 @@
 		D4D5120E1C06A02600D8A8B1 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
-				D4D512291C06E81F00D8A8B1 /* 结构型模式 */,
-				D4D512161C06A40300D8A8B1 /* 创建型模式 */,
 				D4D5120F1C06A02600D8A8B1 /* main.swift */,
+				D4D512161C06A40300D8A8B1 /* 创建型模式 */,
+				D4D512291C06E81F00D8A8B1 /* 结构型模式 */,
+				D4D5123F1C07316800D8A8B1 /* 行为型模式 */,
 			);
 			path = DesignPattern;
 			sourceTree = "<group>";
@@ -127,15 +139,33 @@
 				D4D5122A1C06E83E00D8A8B1 /* 享元模式(Flyweight).png */,
 				D4D5122B1C06E84900D8A8B1 /* 装饰模式(Decorator).png */,
 				D4D512301C06E88300D8A8B1 /* 组合模式(Composite).png */,
-				D4D512311C06E8B000D8A8B1 /* YJProxy.swift */,
-				D4D512331C06EC3300D8A8B1 /* YJBridge.swift */,
 				D4D512351C06FD7900D8A8B1 /* YJAdapter.swift */,
+				D4D512331C06EC3300D8A8B1 /* YJBridge.swift */,
+				D4D5123D1C07084700D8A8B1 /* YJComposite.swift */,
+				D4D5123B1C0702F900D8A8B1 /* YJDecorator.swift */,
 				D4D512371C06FF4600D8A8B1 /* YJFacade.swift */,
 				D4D512391C0700C600D8A8B1 /* YJFlyweight.swift */,
-				D4D5123B1C0702F900D8A8B1 /* YJDecorator.swift */,
-				D4D5123D1C07084700D8A8B1 /* YJComposite.swift */,
+				D4D512311C06E8B000D8A8B1 /* YJProxy.swift */,
 			);
 			name = "结构型模式";
+			sourceTree = "<group>";
+		};
+		D4D5123F1C07316800D8A8B1 /* 行为型模式 */ = {
+			isa = PBXGroup;
+			children = (
+				D4D512401C0732AC00D8A8B1 /* 备忘录模式(Memento).png */,
+				D4D512411C0732AC00D8A8B1 /* 策略模式(Strategy).png */,
+				D4D512421C0732AC00D8A8B1 /* 迭代器模式(Iterator).png */,
+				D4D512431C0732AC00D8A8B1 /* 访问者模式(Visitor).png */,
+				D4D512441C0732AC00D8A8B1 /* 观察者模式(Observer).png */,
+				D4D512451C0732AC00D8A8B1 /* 解释器模式(Interpreter).png */,
+				D4D512461C0732AC00D8A8B1 /* 命令模式(Command).png */,
+				D4D512471C0732AC00D8A8B1 /* 模板方法(TemplateMethod).png */,
+				D4D512481C0732AC00D8A8B1 /* 责任链模式 (COR).png */,
+				D4D512491C0732AC00D8A8B1 /* 中介者模式(Mediator).png */,
+				D4D5124A1C0732AC00D8A8B1 /* 状态模式(State).png */,
+			);
+			name = "行为型模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
