@@ -65,3 +65,15 @@ test.testDesignPattern(YJDecorator())
 print("\n组合模式")
 test.testDesignPattern(YJComposite())
 
+
+print("\n\n================行为型模式")
+print("\n备忘录模式")
+test.testDesignPattern(YJMemento())
+print("\n策略模式")
+test.testDesignPattern(YJStrategy())
+print("\n迭代器模式")
+test.testDesignPattern(YJIterator())
+print("\n访问者模式")
+test.testDesignPattern(YJVisitor())
+
+

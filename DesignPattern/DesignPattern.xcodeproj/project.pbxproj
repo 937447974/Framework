@@ -20,6 +20,10 @@
 		D4D5123A1C0700C600D8A8B1 /* YJFlyweight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D512391C0700C600D8A8B1 /* YJFlyweight.swift */; };
 		D4D5123C1C0702F900D8A8B1 /* YJDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5123B1C0702F900D8A8B1 /* YJDecorator.swift */; };
 		D4D5123E1C07084700D8A8B1 /* YJComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5123D1C07084700D8A8B1 /* YJComposite.swift */; };
+		D4D5124C1C07336E00D8A8B1 /* YJMemento.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5124B1C07336E00D8A8B1 /* YJMemento.swift */; };
+		D4D5124E1C0735D800D8A8B1 /* YJStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5124D1C0735D800D8A8B1 /* YJStrategy.swift */; };
+		D4D512501C0736ED00D8A8B1 /* YJIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5124F1C0736ED00D8A8B1 /* YJIterator.swift */; };
+		D4D512521C073A1600D8A8B1 /* YJVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D512511C073A1600D8A8B1 /* YJVisitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -72,6 +76,10 @@
 		D4D512481C0732AC00D8A8B1 /* 责任链模式 (COR).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "责任链模式 (COR).png"; sourceTree = "<group>"; };
 		D4D512491C0732AC00D8A8B1 /* 中介者模式(Mediator).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中介者模式(Mediator).png"; sourceTree = "<group>"; };
 		D4D5124A1C0732AC00D8A8B1 /* 状态模式(State).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "状态模式(State).png"; sourceTree = "<group>"; };
+		D4D5124B1C07336E00D8A8B1 /* YJMemento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJMemento.swift; sourceTree = "<group>"; };
+		D4D5124D1C0735D800D8A8B1 /* YJStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJStrategy.swift; sourceTree = "<group>"; };
+		D4D5124F1C0736ED00D8A8B1 /* YJIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJIterator.swift; sourceTree = "<group>"; };
+		D4D512511C073A1600D8A8B1 /* YJVisitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJVisitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +172,10 @@
 				D4D512481C0732AC00D8A8B1 /* 责任链模式 (COR).png */,
 				D4D512491C0732AC00D8A8B1 /* 中介者模式(Mediator).png */,
 				D4D5124A1C0732AC00D8A8B1 /* 状态模式(State).png */,
+				D4D5124B1C07336E00D8A8B1 /* YJMemento.swift */,
+				D4D5124D1C0735D800D8A8B1 /* YJStrategy.swift */,
+				D4D5124F1C0736ED00D8A8B1 /* YJIterator.swift */,
+				D4D512511C073A1600D8A8B1 /* YJVisitor.swift */,
 			);
 			name = "行为型模式";
 			sourceTree = "<group>";
@@ -234,9 +246,13 @@
 				D4D512181C06A44800D8A8B1 /* YJSingleton.swift in Sources */,
 				D4D512361C06FD7900D8A8B1 /* YJAdapter.swift in Sources */,
 				D4D512321C06E8B000D8A8B1 /* YJProxy.swift in Sources */,
+				D4D512501C0736ED00D8A8B1 /* YJIterator.swift in Sources */,
+				D4D5124C1C07336E00D8A8B1 /* YJMemento.swift in Sources */,
+				D4D512521C073A1600D8A8B1 /* YJVisitor.swift in Sources */,
 				D4D512381C06FF4600D8A8B1 /* YJFacade.swift in Sources */,
 				D4D5121D1C06D67E00D8A8B1 /* YJPrototype.swift in Sources */,
 				D4D512101C06A02600D8A8B1 /* main.swift in Sources */,
+				D4D5124E1C0735D800D8A8B1 /* YJStrategy.swift in Sources */,
 				D4D5123E1C07084700D8A8B1 /* YJComposite.swift in Sources */,
 				D4D512261C06DDE000D8A8B1 /* YJBuilder.swift in Sources */,
 			);
