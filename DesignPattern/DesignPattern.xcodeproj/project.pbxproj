@@ -13,6 +13,13 @@
 		D4D512241C06D96100D8A8B1 /* YJFactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D512231C06D96100D8A8B1 /* YJFactoryMethod.swift */; };
 		D4D512261C06DDE000D8A8B1 /* YJBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D512251C06DDE000D8A8B1 /* YJBuilder.swift */; };
 		D4D512281C06E25F00D8A8B1 /* YJAbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D512271C06E25F00D8A8B1 /* YJAbstractFactory.swift */; };
+		D4D512321C06E8B000D8A8B1 /* YJProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D512311C06E8B000D8A8B1 /* YJProxy.swift */; };
+		D4D512341C06EC3300D8A8B1 /* YJBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D512331C06EC3300D8A8B1 /* YJBridge.swift */; };
+		D4D512361C06FD7900D8A8B1 /* YJAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D512351C06FD7900D8A8B1 /* YJAdapter.swift */; };
+		D4D512381C06FF4600D8A8B1 /* YJFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D512371C06FF4600D8A8B1 /* YJFacade.swift */; };
+		D4D5123A1C0700C600D8A8B1 /* YJFlyweight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D512391C0700C600D8A8B1 /* YJFlyweight.swift */; };
+		D4D5123C1C0702F900D8A8B1 /* YJDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5123B1C0702F900D8A8B1 /* YJDecorator.swift */; };
+		D4D5123E1C07084700D8A8B1 /* YJComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5123D1C07084700D8A8B1 /* YJComposite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +47,20 @@
 		D4D512231C06D96100D8A8B1 /* YJFactoryMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJFactoryMethod.swift; sourceTree = "<group>"; };
 		D4D512251C06DDE000D8A8B1 /* YJBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJBuilder.swift; sourceTree = "<group>"; };
 		D4D512271C06E25F00D8A8B1 /* YJAbstractFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJAbstractFactory.swift; sourceTree = "<group>"; };
+		D4D5122A1C06E83E00D8A8B1 /* 享元模式(Flyweight).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "享元模式(Flyweight).png"; sourceTree = "<group>"; };
+		D4D5122B1C06E84900D8A8B1 /* 装饰模式(Decorator).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "装饰模式(Decorator).png"; sourceTree = "<group>"; };
+		D4D5122C1C06E84E00D8A8B1 /* 代理模式(Proxy).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "代理模式(Proxy).png"; sourceTree = "<group>"; };
+		D4D5122D1C06E85400D8A8B1 /* 桥接模式(Bridge).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "桥接模式(Bridge).png"; sourceTree = "<group>"; };
+		D4D5122E1C06E85B00D8A8B1 /* 适配器(Adapter).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "适配器(Adapter).png"; sourceTree = "<group>"; };
+		D4D5122F1C06E87600D8A8B1 /* 外观模式(Facade).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "外观模式(Facade).png"; sourceTree = "<group>"; };
+		D4D512301C06E88300D8A8B1 /* 组合模式(Composite).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "组合模式(Composite).png"; sourceTree = "<group>"; };
+		D4D512311C06E8B000D8A8B1 /* YJProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJProxy.swift; sourceTree = "<group>"; };
+		D4D512331C06EC3300D8A8B1 /* YJBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJBridge.swift; sourceTree = "<group>"; };
+		D4D512351C06FD7900D8A8B1 /* YJAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJAdapter.swift; sourceTree = "<group>"; };
+		D4D512371C06FF4600D8A8B1 /* YJFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJFacade.swift; sourceTree = "<group>"; };
+		D4D512391C0700C600D8A8B1 /* YJFlyweight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJFlyweight.swift; sourceTree = "<group>"; };
+		D4D5123B1C0702F900D8A8B1 /* YJDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJDecorator.swift; sourceTree = "<group>"; };
+		D4D5123D1C07084700D8A8B1 /* YJComposite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJComposite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +93,7 @@
 		D4D5120E1C06A02600D8A8B1 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				D4D512291C06E81F00D8A8B1 /* 结构型模式 */,
 				D4D512161C06A40300D8A8B1 /* 创建型模式 */,
 				D4D5120F1C06A02600D8A8B1 /* main.swift */,
 			);
@@ -93,6 +115,27 @@
 				D4D512171C06A44800D8A8B1 /* YJSingleton.swift */,
 			);
 			name = "创建型模式";
+			sourceTree = "<group>";
+		};
+		D4D512291C06E81F00D8A8B1 /* 结构型模式 */ = {
+			isa = PBXGroup;
+			children = (
+				D4D5122C1C06E84E00D8A8B1 /* 代理模式(Proxy).png */,
+				D4D5122D1C06E85400D8A8B1 /* 桥接模式(Bridge).png */,
+				D4D5122E1C06E85B00D8A8B1 /* 适配器(Adapter).png */,
+				D4D5122F1C06E87600D8A8B1 /* 外观模式(Facade).png */,
+				D4D5122A1C06E83E00D8A8B1 /* 享元模式(Flyweight).png */,
+				D4D5122B1C06E84900D8A8B1 /* 装饰模式(Decorator).png */,
+				D4D512301C06E88300D8A8B1 /* 组合模式(Composite).png */,
+				D4D512311C06E8B000D8A8B1 /* YJProxy.swift */,
+				D4D512331C06EC3300D8A8B1 /* YJBridge.swift */,
+				D4D512351C06FD7900D8A8B1 /* YJAdapter.swift */,
+				D4D512371C06FF4600D8A8B1 /* YJFacade.swift */,
+				D4D512391C0700C600D8A8B1 /* YJFlyweight.swift */,
+				D4D5123B1C0702F900D8A8B1 /* YJDecorator.swift */,
+				D4D5123D1C07084700D8A8B1 /* YJComposite.swift */,
+			);
+			name = "结构型模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,10 +197,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4D512241C06D96100D8A8B1 /* YJFactoryMethod.swift in Sources */,
+				D4D512341C06EC3300D8A8B1 /* YJBridge.swift in Sources */,
+				D4D5123C1C0702F900D8A8B1 /* YJDecorator.swift in Sources */,
 				D4D512281C06E25F00D8A8B1 /* YJAbstractFactory.swift in Sources */,
+				D4D5123A1C0700C600D8A8B1 /* YJFlyweight.swift in Sources */,
 				D4D512181C06A44800D8A8B1 /* YJSingleton.swift in Sources */,
+				D4D512361C06FD7900D8A8B1 /* YJAdapter.swift in Sources */,
+				D4D512321C06E8B000D8A8B1 /* YJProxy.swift in Sources */,
+				D4D512381C06FF4600D8A8B1 /* YJFacade.swift in Sources */,
 				D4D5121D1C06D67E00D8A8B1 /* YJPrototype.swift in Sources */,
 				D4D512101C06A02600D8A8B1 /* main.swift in Sources */,
+				D4D5123E1C07084700D8A8B1 /* YJComposite.swift in Sources */,
 				D4D512261C06DDE000D8A8B1 /* YJBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

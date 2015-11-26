@@ -33,7 +33,7 @@ private class Singleton  {
 }
 
 /// 单例模式测试
-class YJSingletonTest: YJTestProtocol {
+class YJSingleton: YJTestProtocol {
     
     func test() {
         var singleton = Singleton.getInstance()

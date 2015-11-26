@@ -35,7 +35,7 @@ private class ConcretePrototype: Prototype {
 }
 
 /// 原型模式测试
-class YJPrototypeTest: YJTestProtocol {
+class YJPrototype: YJTestProtocol {
     
     func test() {
         let pro = ConcretePrototype(name:"阳君")

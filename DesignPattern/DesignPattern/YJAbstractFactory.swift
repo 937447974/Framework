@@ -11,7 +11,7 @@
 
 import Cocoa
 
-/// ICat为一类产品对象声明一个协议。
+/// CatProtocol为一类产品对象声明一个协议。
 private protocol CatProtocol {
     
     func eat()
@@ -105,7 +105,7 @@ private class BlackAnimalFactory: AnimalFactoryProtocol {
 // MARK: -
 
 /// 抽象工厂
-class YJAbstractFactoryTest: YJTestProtocol {
+class YJAbstractFactory: YJTestProtocol {
 
     func test() {
         let blackAnimalFactory = BlackAnimalFactory()

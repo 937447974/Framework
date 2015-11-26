@@ -65,7 +65,7 @@ private class TeacherWorkFactory : WorkFactoryProtocol {
 // MARK: -
 
 /// 工厂方法测试
-class YJFactoryMethodTest: YJTestProtocol {
+class YJFactoryMethod: YJTestProtocol {
     
     func test() {
         let studentWorkFactory = StudentWorkFactory()

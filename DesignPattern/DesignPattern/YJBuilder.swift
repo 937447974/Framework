@@ -97,7 +97,7 @@ private class PersonDirector {
 // MARK: -
 
 /// 建造者模式
-class YJBuilderTest: YJTestProtocol {
+class YJBuilder: YJTestProtocol {
 
     func test() {
         // 构造器
