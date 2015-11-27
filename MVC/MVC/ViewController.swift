@@ -8,18 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ModelProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // 向服务器发送数据
+        let model = Model()
+        model.data = Dictionary()
+        model.data!["name"] = "阳君"
+        model.delegate = self // 当前类接收数据
+        print("开始请求服务器")
+        model.sendRequest()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func execute(model: Model) {
+        print("UI接收数据：\(model.data)")
     }
-
 
 }
 
