@@ -2,13 +2,16 @@
 //  YJInterpreter.swift
 //  DesignPattern
 //
+//  CSDN:http://blog.csdn.net/y550918116j
+//  GitHub:https://github.com/937447974/Blog
+//
 //  Created by yangjun on 15/11/27.
 //  Copyright © 2015年 阳君. All rights reserved.
 //
 
 import Cocoa
 
-/// 声明一个抽象的解释操作，这个接口为抽象语法树中所有的节点所共享
+/// 声明一个抽象的解释操作，这个协议为抽象语法树中所有的节点所共享
 private protocol ExpressionProtocol {
     
     func interpret(context: Context)

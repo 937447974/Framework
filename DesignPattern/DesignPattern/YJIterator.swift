@@ -2,13 +2,16 @@
 //  YJIterator.swift
 //  DesignPattern
 //
+//  CSDN:http://blog.csdn.net/y550918116j
+//  GitHub:https://github.com/937447974/Blog
+//
 //  Created by yangjun on 15/11/26.
 //  Copyright © 2015年 阳君. All rights reserved.
 //
 
 import Cocoa
 
-/// 聚合定义创建相应迭代器对象的接口
+/// 聚合定义创建相应迭代器对象的协议
 private protocol ListProtocol {
     
     func iterator() -> IteratorProtocol
@@ -21,7 +24,7 @@ private protocol ListProtocol {
     
 }
 
-/// 具体聚合实现创建相应迭代器的接口，该操作返回ConcreteIterator的一个适当的实例.
+/// 具体聚合实现创建相应迭代器的协议，该操作返回ConcreteIterator的一个适当的实例.
 private class List: ListProtocol {
     
     /// 数组
@@ -53,7 +56,7 @@ private class List: ListProtocol {
 
 // MARK: - 
 
-/// 迭代器定义访问和遍历元素的接口
+/// 迭代器定义访问和遍历元素的协议
 private protocol IteratorProtocol {
     
     func next() ->AnyObject
@@ -62,7 +65,7 @@ private protocol IteratorProtocol {
     
 }
 
-/// 具体迭代器实现迭代器接口,对该聚合遍历时跟踪当前位置
+/// 具体迭代器实现迭代器协议,对该聚合遍历时跟踪当前位置
 private class Iterator: IteratorProtocol {
     
     /// 数组

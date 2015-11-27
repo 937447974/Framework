@@ -2,6 +2,9 @@
 //  YJCommand.swift
 //  DesignPattern
 //
+//  CSDN:http://blog.csdn.net/y550918116j
+//  GitHub:https://github.com/937447974/Blog
+//
 //  Created by yangjun on 15/11/27.
 //  Copyright © 2015年 阳君. All rights reserved.
 //
@@ -19,7 +22,7 @@ private class Receiver {
 
 // MARK: -
 
-/// Command声明执行操作的接口
+/// Command声明执行操作的协议
 private protocol CommandProtocol {
     
     func execute()

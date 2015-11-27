@@ -2,13 +2,16 @@
 //  YJObserver.swift
 //  DesignPattern
 //
+//  CSDN:http://blog.csdn.net/y550918116j
+//  GitHub:https://github.com/937447974/Blog
+//
 //  Created by yangjun on 15/11/27.
 //  Copyright © 2015年 阳君. All rights reserved.
 //
 
 import Cocoa
 
-/// PolicemanProtocol（观察者）为那些在目标发生改变时需获得通知的对象定义一个更新接口。
+/// PolicemanProtocol（观察者）为那些在目标发生改变时需获得通知的对象定义一个更新协议。
 private protocol PolicemanProtocol {
     
     func action(citizen:Citizen)
@@ -48,7 +51,7 @@ private class TianHePoliceman: PolicemanProtocol {
 
 // MARK: - 
 
-/// Citizen（目标）目标知道它的观察者。可以有任意多个观察者观察同一个目标。提供注册和删除观察者对象的接口
+/// Citizen（目标）目标知道它的观察者。可以有任意多个观察者观察同一个目标。提供注册和删除观察者对象的协议
 private class Citizen {
     
     /// 警察局列表

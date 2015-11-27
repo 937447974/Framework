@@ -2,13 +2,16 @@
 //  YJMediator.swift
 //  DesignPattern
 //
+//  CSDN:http://blog.csdn.net/y550918116j
+//  GitHub:https://github.com/937447974/Blog
+//
 //  Created by yangjun on 15/11/27.
 //  Copyright © 2015年 阳君. All rights reserved.
 //
 
 import Cocoa
 
-/// MediatorProtocol中介者定义一个接口用于与各同事（Colleague）对象通信。
+/// MediatorProtocol中介者定义一个协议用于与各同事（Colleague）对象通信。
 private protocol MediatorProtocol {
     
     // MARK: 通知
@@ -41,7 +44,7 @@ private class ConcreteMediator: MediatorProtocol {
 
 // MARK: - 
 
-/// ColleagueProtocol接口
+/// ColleagueProtocol协议
 private protocol ColleagueProtocol {
     
     // MARK: 通知

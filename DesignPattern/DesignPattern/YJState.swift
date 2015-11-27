@@ -2,13 +2,16 @@
 //  YJState.swift
 //  DesignPattern
 //
+//  CSDN:http://blog.csdn.net/y550918116j
+//  GitHub:https://github.com/937447974/Blog
+//
 //  Created by yangjun on 15/11/27.
 //  Copyright © 2015年 阳君. All rights reserved.
 //
 
 import Cocoa
 
-/// WeatherProtocol定义一个接口以封装与Context的一个特定状态相关的行为
+/// WeatherProtocol定义一个协议以封装与Context的一个特定状态相关的行为
 private protocol WeatherProtocol {
     
     func getWeather() ->String
@@ -33,7 +36,7 @@ private class Sunshine: WeatherProtocol {
 
 // MARK: -
 
-/// Context定义客户感兴趣的接口
+/// Context定义客户感兴趣的协议
 private class Context {
     
     var weather: WeatherProtocol?

@@ -87,5 +87,8 @@ print("\n状态模式")
 test.testDesignPattern(YJState())
 print("\n中介者模式")
 test.testDesignPattern(YJMediator())
+print("\n责任链模式")
+test.testDesignPattern(YJCOR())
+
 
 

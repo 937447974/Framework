@@ -2,20 +2,23 @@
 //  YJStrategy.swift
 //  DesignPattern
 //
+//  CSDN:http://blog.csdn.net/y550918116j
+//  GitHub:https://github.com/937447974/Blog
+//
 //  Created by yangjun on 15/11/26.
 //  Copyright © 2015年 阳君. All rights reserved.
 //
 
 import Cocoa
 
-/// StrategyProtocol定义所有支持的算法的公共接口
+/// StrategyProtocol定义所有支持的算法的公共协议
 private protocol StrategyProtocol {
     
     func method()
     
 }
 
-/// 以StrategyProtocol接口实现某具体算法
+/// 以StrategyProtocol协议实现某具体算法
 private class StrategyA: StrategyProtocol {
     
     func method() {
@@ -24,7 +27,7 @@ private class StrategyA: StrategyProtocol {
     
 }
 
-/// 以StrategyProtocol接口实现某具体算法
+/// 以StrategyProtocol协议实现某具体算法
 private class StrategyB: StrategyProtocol {
     
     func method() {

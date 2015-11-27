@@ -13,6 +13,7 @@
 		D401582D1C07F2FC0084F888 /* YJTemplateMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401582C1C07F2FC0084F888 /* YJTemplateMethod.swift */; };
 		D401582F1C07F4290084F888 /* YJState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401582E1C07F4290084F888 /* YJState.swift */; };
 		D40158311C07F53A0084F888 /* YJMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40158301C07F53A0084F888 /* YJMediator.swift */; };
+		D40158331C07F6E80084F888 /* YJCOR.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40158321C07F6E80084F888 /* YJCOR.swift */; };
 		D4D512101C06A02600D8A8B1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5120F1C06A02600D8A8B1 /* main.swift */; };
 		D4D512181C06A44800D8A8B1 /* YJSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D512171C06A44800D8A8B1 /* YJSingleton.swift */; };
 		D4D5121D1C06D67E00D8A8B1 /* YJPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5121C1C06D67E00D8A8B1 /* YJPrototype.swift */; };
@@ -51,6 +52,7 @@
 		D401582C1C07F2FC0084F888 /* YJTemplateMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJTemplateMethod.swift; sourceTree = "<group>"; };
 		D401582E1C07F4290084F888 /* YJState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJState.swift; sourceTree = "<group>"; };
 		D40158301C07F53A0084F888 /* YJMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJMediator.swift; sourceTree = "<group>"; };
+		D40158321C07F6E80084F888 /* YJCOR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJCOR.swift; sourceTree = "<group>"; };
 		D4D5120C1C06A02600D8A8B1 /* DesignPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D5120F1C06A02600D8A8B1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D4D512171C06A44800D8A8B1 /* YJSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJSingleton.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				D4D512511C073A1600D8A8B1 /* YJVisitor.swift */,
 				D401582E1C07F4290084F888 /* YJState.swift */,
 				D40158301C07F53A0084F888 /* YJMediator.swift */,
+				D40158321C07F6E80084F888 /* YJCOR.swift */,
 			);
 			name = "行为型模式";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				D4D512361C06FD7900D8A8B1 /* YJAdapter.swift in Sources */,
 				D4D512321C06E8B000D8A8B1 /* YJProxy.swift in Sources */,
 				D4D512501C0736ED00D8A8B1 /* YJIterator.swift in Sources */,
+				D40158331C07F6E80084F888 /* YJCOR.swift in Sources */,
 				D4D5124C1C07336E00D8A8B1 /* YJMemento.swift in Sources */,
 				D4D512521C073A1600D8A8B1 /* YJVisitor.swift in Sources */,
 				D4D512381C06FF4600D8A8B1 /* YJFacade.swift in Sources */,
