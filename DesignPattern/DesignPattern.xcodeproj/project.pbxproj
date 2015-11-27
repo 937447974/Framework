@@ -187,16 +187,16 @@
 				D4D512491C0732AC00D8A8B1 /* 中介者模式(Mediator).png */,
 				D4D5124A1C0732AC00D8A8B1 /* 状态模式(State).png */,
 				D401582A1C07F15F0084F888 /* YJCommand.swift */,
+				D40158321C07F6E80084F888 /* YJCOR.swift */,
 				D40158281C07EEC70084F888 /* YJInterpreter.swift */,
 				D4D5124F1C0736ED00D8A8B1 /* YJIterator.swift */,
+				D40158301C07F53A0084F888 /* YJMediator.swift */,
 				D4D5124B1C07336E00D8A8B1 /* YJMemento.swift */,
 				D40158261C07EC380084F888 /* YJObserver.swift */,
+				D401582E1C07F4290084F888 /* YJState.swift */,
 				D4D5124D1C0735D800D8A8B1 /* YJStrategy.swift */,
 				D401582C1C07F2FC0084F888 /* YJTemplateMethod.swift */,
 				D4D512511C073A1600D8A8B1 /* YJVisitor.swift */,
-				D401582E1C07F4290084F888 /* YJState.swift */,
-				D40158301C07F53A0084F888 /* YJMediator.swift */,
-				D40158321C07F6E80084F888 /* YJCOR.swift */,
 			);
 			name = "行为型模式";
 			sourceTree = "<group>";
