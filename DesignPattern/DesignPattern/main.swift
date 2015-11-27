@@ -83,5 +83,6 @@ print("\n命令模式")
 test.testDesignPattern(YJCommand())
 print("\n模板方法")
 test.testDesignPattern(YJTemplateMethod())
-
+print("\n状态模式")
+test.testDesignPattern(YJState())
 
