@@ -13,3 +13,7 @@ QQ：937447974
 # DesignPattern
 
 软件中常用的23种设计模式。
+
+# MVC
+
+MVC架构
