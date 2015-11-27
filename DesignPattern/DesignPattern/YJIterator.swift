@@ -9,7 +9,7 @@
 import Cocoa
 
 /// 聚合定义创建相应迭代器对象的接口
-protocol ListProtocol {
+private protocol ListProtocol {
     
     func iterator() -> IteratorProtocol
     
@@ -22,7 +22,7 @@ protocol ListProtocol {
 }
 
 /// 具体聚合实现创建相应迭代器的接口，该操作返回ConcreteIterator的一个适当的实例.
-class List: ListProtocol {
+private class List: ListProtocol {
     
     /// 数组
     private var list:[AnyObject] = []
@@ -54,7 +54,7 @@ class List: ListProtocol {
 // MARK: - 
 
 /// 迭代器定义访问和遍历元素的接口
-protocol IteratorProtocol {
+private protocol IteratorProtocol {
     
     func next() ->AnyObject
 
@@ -63,7 +63,7 @@ protocol IteratorProtocol {
 }
 
 /// 具体迭代器实现迭代器接口,对该聚合遍历时跟踪当前位置
-class Iterator: IteratorProtocol {
+private class Iterator: IteratorProtocol {
     
     /// 数组
     private var list:List

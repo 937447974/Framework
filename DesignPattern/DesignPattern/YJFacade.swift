@@ -12,14 +12,14 @@
 import Cocoa
 
 /// 服务A协议
-protocol ServiceProtocolA {
+private protocol ServiceProtocolA {
     
     func methodA()
     
 }
 
 /// ServiceA的实现
-class ServiceA: ServiceProtocolA {
+private class ServiceA: ServiceProtocolA {
     
     func methodA() {
         print("这是服务A")
@@ -30,14 +30,14 @@ class ServiceA: ServiceProtocolA {
 // MARK: -
 
 /// 服务B协议
-protocol ServiceProtocolB {
+private protocol ServiceProtocolB {
   
     func methodB()
     
 }
 
 /// ServiceB的实现
-class ServiceB: ServiceProtocolB {
+private class ServiceB: ServiceProtocolB {
     
     func methodB() {
         print("这是服务B")
@@ -48,7 +48,7 @@ class ServiceB: ServiceProtocolB {
 // MARK: -
 
 /// Facade知道哪些子系统类负责处理请求。将客户的请求代理给适当的子系统对象。
-class Facade {
+private class Facade {
     
     /// 服务A
     let sa: ServiceProtocolA = ServiceA()

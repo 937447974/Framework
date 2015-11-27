@@ -16,7 +16,7 @@ private protocol StrategyProtocol {
 }
 
 /// 以StrategyProtocol接口实现某具体算法
-class StrategyA: StrategyProtocol {
+private class StrategyA: StrategyProtocol {
     
     func method() {
         print("StrategyA实现");
@@ -25,7 +25,7 @@ class StrategyA: StrategyProtocol {
 }
 
 /// 以StrategyProtocol接口实现某具体算法
-class StrategyB: StrategyProtocol {
+private class StrategyB: StrategyProtocol {
     
     func method() {
         print("StrategyB实现");

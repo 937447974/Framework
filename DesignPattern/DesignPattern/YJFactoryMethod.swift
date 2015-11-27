@@ -27,7 +27,7 @@ private class StudentWork : WorkProtocol {
 }
 
 /// TeacherWork实现WorkProtocol协议。
-class TeacherWork : WorkProtocol {
+private class TeacherWork : WorkProtocol {
     
     func doWork() {
         print("王老师审批作业!")

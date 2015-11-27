@@ -19,7 +19,7 @@ private protocol CatProtocol {
 }
 
 /// WhiteCat定义一个将被相应的具体工厂创建的产品对象。实现CatProtocol协议
-class WhiteCat: CatProtocol {
+private class WhiteCat: CatProtocol {
     
     func eat() {
         print("The white cat is eating!")
@@ -28,7 +28,7 @@ class WhiteCat: CatProtocol {
 }
 
 /// BlackCat定义一个将被相应的具体工厂创建的产品对象。实现CatProtocol协议
-class BlackCat: CatProtocol {
+private class BlackCat: CatProtocol {
     
     func eat() {
         print("The black cat is eating!")
@@ -39,7 +39,7 @@ class BlackCat: CatProtocol {
 // MARK: -
 
 /// DogProtocol为一类产品对象声明一个协议。
-protocol DogProtocol {
+private protocol DogProtocol {
     
     func eat()
     
@@ -55,7 +55,7 @@ private class WhiteDog: DogProtocol {
 }
 
 /// BlackDog定义一个将被相应的具体工厂创建的产品对象。实现DogProtocol协议
-class BlackDog: DogProtocol {
+private class BlackDog: DogProtocol {
     
     func eat() {
         print("The black dog is eating!")
