@@ -27,7 +27,9 @@ private class Man: PersonProtocol {
     
 }
 
-/// Decorator维持一个指向PersonProtocol对象的指针，并定义一个与PersonProtocol协议一致的协议
+// MARK: -
+
+/// Decorator维持一个指向PersonProtocol对象的指针，并实现PersonProtocol协议
 private class Decorator: PersonProtocol {
     
     /// 协议对象，等待实现
@@ -57,6 +59,8 @@ private class ManDecoratorB: Decorator {
     }
     
 }
+
+// MARK: -
 
 /// 装饰模式
 class YJDecorator: YJTestProtocol {

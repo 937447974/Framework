@@ -36,6 +36,8 @@ private class StrategyB: StrategyProtocol {
     
 }
 
+// MARK: -
+
 /// 维护一个对Strategy对象的引用
 private class ContextSt {
     
@@ -46,6 +48,8 @@ private class ContextSt {
     }
     
 }
+
+// MARK: -
 
 /// 策略模式
 class YJStrategy: YJTestProtocol {

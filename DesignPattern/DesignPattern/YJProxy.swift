@@ -11,7 +11,7 @@
 
 import Cocoa
 
-/// ObjectP定义ObjectImpl和ProxyObject的共用协议，这样就在任何使用ObjectImpl的地方都可以使用ProxyObject
+/// ObjectProtocol定义ViewController和ProxyObject的共用协议
 private protocol ObjectProtocol {
     
     func action()

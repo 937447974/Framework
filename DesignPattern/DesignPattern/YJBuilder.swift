@@ -48,8 +48,10 @@ private protocol PersonBuilder {
 }
 
 
-/// ManBuilder实现PersonBuilder的协议以构造和装配该产品的各个部件。定义并明确它所创建的表示。提供一个检索产品的协议。
+/// ManBuilder实现PersonBuilder的协议以构造和装配该产品的各个部件。
 private class ManBuilder: PersonBuilder {
+    
+    // 定义并明确它所创建的表示。提供一个检索产品的协议。
     
     /// 人员对象
     let person:Person = Man()

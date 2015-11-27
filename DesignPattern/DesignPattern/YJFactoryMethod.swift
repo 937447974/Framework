@@ -37,8 +37,11 @@ private class TeacherWork : WorkProtocol {
 
 // MARK: -
 
-/// WorkFactoryProtocol声明工厂方法，该方法返回一个支持WorkProtocol协议的对象。WorkFactoryProtocol也可以定义一个工厂方法的缺省实现，它返回一个缺省的WorkProtocol对象。可以调用工厂方法以创建一个Work对象。
+/// WorkFactoryProtocol声明工厂方法，该方法返回一个支持WorkProtocol协议的对象。
 private protocol WorkFactoryProtocol {
+    
+    // WorkFactoryProtocol也可以定义一个工厂方法的缺省实现，它返回一个缺省的WorkProtocol对象。
+    // 可以调用工厂方法以创建一个Work对象。
     
     func getWork() -> WorkProtocol
     
