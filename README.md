@@ -17,3 +17,11 @@ QQ：937447974
 # MVC
 
 MVC架构
+
+# MVP
+
+MVP架构
+
+# MVVM
+
+MVVM架构
