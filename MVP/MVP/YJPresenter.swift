@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Presenter层的协议
+/// Presenter层的协议,view层实现
 protocol YJPresenterProtocol {
     
     // 定义一系列通知UI的接口
@@ -21,6 +21,7 @@ class YJPresenter: YJModelProtocol {
     
     /// 姓名
     var name: String?
+    /// view层代理
     var delegate: YJPresenterProtocol?
     
     // 开始数据准备
