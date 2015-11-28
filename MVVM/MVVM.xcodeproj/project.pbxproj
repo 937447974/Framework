@@ -3,17 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D475FDDB1C097EA40012B5FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D475FDDA1C097EA40012B5FE /* AppDelegate.swift */; };
-		D475FDDD1C097EA40012B5FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D475FDDC1C097EA40012B5FE /* ViewController.swift */; };
 		D475FDE01C097EA40012B5FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D475FDDE1C097EA40012B5FE /* Main.storyboard */; };
 		D475FDE21C097EA40012B5FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D475FDE11C097EA40012B5FE /* Assets.xcassets */; };
 		D475FDE51C097EA40012B5FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D475FDE31C097EA40012B5FE /* LaunchScreen.storyboard */; };
 		D475FDF01C097EA40012B5FE /* MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D475FDEF1C097EA40012B5FE /* MVVMTests.swift */; };
 		D475FDFB1C097EA40012B5FE /* MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D475FDFA1C097EA40012B5FE /* MVVMUITests.swift */; };
+		D475FE0C1C0981640012B5FE /* YJViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D475FE0B1C0981640012B5FE /* YJViewController.swift */; };
+		D475FE0E1C09817C0012B5FE /* YJModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D475FE0D1C09817C0012B5FE /* YJModel.swift */; };
+		D475FE101C0982490012B5FE /* YJViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D475FE0F1C0982490012B5FE /* YJViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		D475FDD71C097EA40012B5FE /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D475FDDA1C097EA40012B5FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D475FDDC1C097EA40012B5FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D475FDDF1C097EA40012B5FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D475FDE11C097EA40012B5FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D475FDE41C097EA40012B5FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		D475FDF61C097EA40012B5FE /* MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D475FDFA1C097EA40012B5FE /* MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMUITests.swift; sourceTree = "<group>"; };
 		D475FDFC1C097EA40012B5FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D475FE0B1C0981640012B5FE /* YJViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJViewController.swift; sourceTree = "<group>"; };
+		D475FE0D1C09817C0012B5FE /* YJModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJModel.swift; sourceTree = "<group>"; };
+		D475FE0F1C0982490012B5FE /* YJViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		D475FDD91C097EA40012B5FE /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				D475FE081C09812A0012B5FE /* View */,
+				D475FE0A1C0981410012B5FE /* ViewModel */,
+				D475FE091C0981390012B5FE /* Model */,
 				D475FDDA1C097EA40012B5FE /* AppDelegate.swift */,
-				D475FDDC1C097EA40012B5FE /* ViewController.swift */,
 				D475FDDE1C097EA40012B5FE /* Main.storyboard */,
 				D475FDE11C097EA40012B5FE /* Assets.xcassets */,
 				D475FDE31C097EA40012B5FE /* LaunchScreen.storyboard */,
@@ -123,6 +129,30 @@
 				D475FDFC1C097EA40012B5FE /* Info.plist */,
 			);
 			path = MVVMUITests;
+			sourceTree = "<group>";
+		};
+		D475FE081C09812A0012B5FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D475FE0B1C0981640012B5FE /* YJViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D475FE091C0981390012B5FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D475FE0D1C09817C0012B5FE /* YJModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D475FE0A1C0981410012B5FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D475FE0F1C0982490012B5FE /* YJViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +217,7 @@
 		D475FDCF1C097EA40012B5FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YJ;
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "阳君";
@@ -205,7 +236,7 @@
 				};
 			};
 			buildConfigurationList = D475FDD21C097EA40012B5FE /* Build configuration list for PBXProject "MVVM" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -256,8 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D475FDDD1C097EA40012B5FE /* ViewController.swift in Sources */,
 				D475FDDB1C097EA40012B5FE /* AppDelegate.swift in Sources */,
+				D475FE0C1C0981640012B5FE /* YJViewController.swift in Sources */,
+				D475FE0E1C09817C0012B5FE /* YJModel.swift in Sources */,
+				D475FE101C0982490012B5FE /* YJViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
