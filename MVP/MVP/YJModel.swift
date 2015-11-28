@@ -2,6 +2,9 @@
 //  YJModel.swift
 //  MVP
 //
+//  CSDN:http://blog.csdn.net/y550918116j
+//  GitHub:https://github.com/937447974/Blog
+//
 //  Created by yangjun on 15/11/28.
 //  Copyright © 2015年 阳君. All rights reserved.
 //
@@ -27,12 +30,16 @@ class YJModel: NSObject {
     ///
     /// - returns: void
     func sendRequest() {
+        print("\nModel Begin============")
+        print("Model收到通知开始请求服务器")
         print("服务器接收数据:\(self.data)")
         if self.data == nil {
             self.data = Dictionary()
         }
         self.data!["qq"] = "937447974"
-        print("服务器数据处理完毕，回调中...")
+        print("服务器数据处理完毕，回发中...")
+        print("Model收到服务器发回的数据，通知Presenter层")
+        print("Model End============")
         self.delegate?.execute(self)
     }
     

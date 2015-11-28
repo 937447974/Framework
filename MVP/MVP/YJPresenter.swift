@@ -2,6 +2,9 @@
 //  YJPresenter.swift
 //  MVP
 //
+//  CSDN:http://blog.csdn.net/y550918116j
+//  GitHub:https://github.com/937447974/Blog
+//
 //  Created by yangjun on 15/11/28.
 //  Copyright © 2015年 阳君. All rights reserved.
 //
@@ -26,21 +29,23 @@ class YJPresenter: YJModelProtocol {
     
     // 开始数据准备
     func initData() {
+        print("\nPresenter Begin++++++++++++")
+        print("Presenter层收到UI指令")
         // 向服务器发送数据
         let model = YJModel()
         model.data = Dictionary()
         model.data!["name"] = "阳君"
         model.delegate = self // 当前类接收数据
-        print("开始请求服务器")
+        print("开始请求Model层获取数据")
         model.sendRequest()
     }
     
     func execute(model: YJModel) {
-        print("UI接收数据：\(model.data)")
+        print("\nPresenter层收到Model层数据：\(model.data)")
         self.name = model.data?["name"] as? String
-        // 通知view层
+        print("Presenter层通知UI层，数据已准备")
+        print("Presenter End++++++++++++")
         self.delegate?.execute(self)
     }
     
-
 }
