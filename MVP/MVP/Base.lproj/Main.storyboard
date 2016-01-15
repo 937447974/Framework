@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,27 +17,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSl-M8-sZA">
-                                <rect key="frame" x="167" y="323" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmM-35-94v">
+                                <rect key="frame" x="151" y="316" width="73" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZSl-M8-sZA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V8O-nr-EiP"/>
-                            <constraint firstItem="ZSl-M8-sZA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bRW-f5-ZqN"/>
+                            <constraint firstItem="rmM-35-94v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Omh-2M-wTk"/>
+                            <constraint firstItem="rmM-35-94v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xls-TR-pzr"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="name" destination="ZSl-M8-sZA" id="P76-T3-FPc"/>
+                        <outlet property="presenter" destination="qce-kA-i3b" id="0aG-Hb-lI2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="qce-kA-i3b" customClass="YJPresenter" customModule="MVP" customModuleProvider="target">
+                    <connections>
+                        <outlet property="nameLabel" destination="rmM-35-94v" id="mll-4A-aw3"/>
+                    </connections>
+                </customObject>
             </objects>
         </scene>
     </scenes>
