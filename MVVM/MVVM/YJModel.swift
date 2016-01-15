@@ -5,8 +5,8 @@
 //  CSDN:http://blog.csdn.net/y550918116j
 //  GitHub:https://github.com/937447974/Blog
 //
-//  Created by yangjun on 15/11/28.
-//  Copyright © 2015年 阳君. All rights reserved.
+//  Created by yangjun on 16/1/15.
+//  Copyright © 2016年 阳君. All rights reserved.
 //
 
 import Foundation
@@ -38,7 +38,7 @@ class YJModel: NSObject {
         }
         self.data!["qq"] = "937447974"
         print("服务器数据处理完毕，回发中...")
-        print("Model收到服务器发回的数据，通知ViewModel层")
+        print("Model收到服务器发回的数据，通知上一层")
         print("Model End============")
         self.delegate?.execute(self)
     }

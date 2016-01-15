@@ -5,22 +5,32 @@
 //  CSDN:http://blog.csdn.net/y550918116j
 //  GitHub:https://github.com/937447974/Blog
 //
-//  Created by yangjun on 15/11/28.
-//  Copyright © 2015年 阳君. All rights reserved.
+//  Created by yangjun on 16/1/15.
+//  Copyright © 2016年 阳君. All rights reserved.
 //
 
 import UIKit
 
-/// ViewModel层
-class YJViewModel: NSObject, YJModelProtocol {
+/// ViewModel层的协议,view层实现
+protocol YJViewModelProtocol {
+    
+    // 定义一系列通知UI的接口
+    func execute(viewModel: YJViewModel)
+    
+}
+
+/// ViewModel完全把Model和View进行了分离，主要的程序逻辑在ViewModel里实现。
+public class YJViewModel: YJModelProtocol {
     
     /// 姓名
-    @IBOutlet weak var nameLabel: UILabel!
+    var name: String?
+    /// view层代理
+    var delegate: YJViewModelProtocol?
     
-    func viewDidLoad() {
-        // 开始数据准备
-        print("\nViewModel层收到View层指令")
-        print("ViewModel Begin++++++++++++")
+    // 开始数据准备
+    func initData() {
+        print("\nViewModel Begin++++++++++++")
+        print("ViewModel层收到UI指令")
         // 向服务器发送数据
         let model = YJModel()
         model.data = Dictionary()
@@ -32,8 +42,10 @@ class YJViewModel: NSObject, YJModelProtocol {
     
     func execute(model: YJModel) {
         print("\nViewModel层收到Model层数据：\(model.data)")
-        self.nameLabel.text = model.data?["name"] as? String
+        self.name = model.data?["name"] as? String
+        print("ViewModel层通知UI层，数据已准备")
         print("ViewModel End++++++++++++")
+        self.delegate?.execute(self)
     }
     
 }

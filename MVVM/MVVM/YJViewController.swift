@@ -1,28 +1,36 @@
 //
-//  YJViewController.swift
+//  ViewController.swift
 //  MVVM
 //
-//  CSDN:http://blog.csdn.net/y550918116j
-//  GitHub:https://github.com/937447974/Blog
-//
-//  Created by yangjun on 15/11/28.
-//  Copyright © 2015年 阳君. All rights reserved.
+//  Created by yangjun on 16/1/15.
+//  Copyright © 2016年 阳君. All rights reserved.
 //
 
 import UIKit
 
 /// View层
-class YJViewController: UIViewController {
-
-    /// ViewModel层
-    @IBOutlet var viewModel: YJViewModel!
+class YJViewController: UIViewController, YJViewModelProtocol {
+    
+    /// 姓名
+    @IBOutlet weak var name: UILabel!
+    /// Presenter层
+    var viewModel = YJViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("View层初始化UI")
-        print("View通知ViewModel加载数据")
-        // 视图加载
-        self.viewModel.viewDidLoad()
+        print("View Begin------------")
+        self.viewModel.delegate = self
+        print("View层发出指令通知Presenter层")
+        self.viewModel.initData()// 初始化数据
+    }
+    
+    // MARK: - YJViewModelProtocol
+    func execute(viewModel: YJViewModel) {
+        print("\nView层收到Presenter层通知")
+        self.name.text = viewModel.name
+        print("View End------------")
     }
     
 }
+
+
