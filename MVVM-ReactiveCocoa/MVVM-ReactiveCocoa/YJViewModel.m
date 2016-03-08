@@ -13,4 +13,10 @@
 
 @implementation YJViewModel
 
+- (void)initData
+{
+    NSLog(@"用户名:%@; 密码:%@", self.userName, self.password);
+    self.title = @"阳君：937447974";
+}
+
 @end
