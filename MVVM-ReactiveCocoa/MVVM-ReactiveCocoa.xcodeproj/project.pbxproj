@@ -14,6 +14,8 @@
 		8414E0D01C8D84900019E433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8414E0CE1C8D84900019E433 /* LaunchScreen.storyboard */; };
 		8414E0DB1C8D84900019E433 /* MVVM_ReactiveCocoaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414E0DA1C8D84900019E433 /* MVVM_ReactiveCocoaTests.m */; };
 		8414E0E61C8D84900019E433 /* MVVM_ReactiveCocoaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414E0E51C8D84900019E433 /* MVVM_ReactiveCocoaUITests.m */; };
+		8414E0F91C8D89910019E433 /* YJViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414E0F81C8D89910019E433 /* YJViewModel.m */; };
+		8414E0FC1C8D89A00019E433 /* YJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414E0FB1C8D89A00019E433 /* YJViewController.m */; };
 		BEC39787AF56646D42E1E2EB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90BC21E99F057B60E92B4BAE /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,10 @@
 		8414E0E11C8D84900019E433 /* MVVM-ReactiveCocoaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-ReactiveCocoaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8414E0E51C8D84900019E433 /* MVVM_ReactiveCocoaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVM_ReactiveCocoaUITests.m; sourceTree = "<group>"; };
 		8414E0E71C8D84900019E433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8414E0F71C8D89910019E433 /* YJViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViewModel.h; sourceTree = "<group>"; };
+		8414E0F81C8D89910019E433 /* YJViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJViewModel.m; sourceTree = "<group>"; };
+		8414E0FA1C8D89A00019E433 /* YJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViewController.h; sourceTree = "<group>"; };
+		8414E0FB1C8D89A00019E433 /* YJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJViewController.m; sourceTree = "<group>"; };
 		90BC21E99F057B60E92B4BAE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18F684F3ACFA457E3CDB964 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,10 +113,10 @@
 			children = (
 				8414E0C31C8D84900019E433 /* AppDelegate.h */,
 				8414E0C41C8D84900019E433 /* AppDelegate.m */,
-				8414E0C91C8D84900019E433 /* Main.storyboard */,
-				8414E0CC1C8D84900019E433 /* Assets.xcassets */,
-				8414E0CE1C8D84900019E433 /* LaunchScreen.storyboard */,
-				8414E0D11C8D84900019E433 /* Info.plist */,
+				8414E0F51C8D88D40019E433 /* Main */,
+				8414E0F61C8D89510019E433 /* ViewModel */,
+				8414E0F41C8D87D30019E433 /* Storyboards */,
+				8414E0F31C8D87C90019E433 /* Resources */,
 				8414E0C01C8D84900019E433 /* Supporting Files */,
 			);
 			path = "MVVM-ReactiveCocoa";
@@ -119,6 +125,7 @@
 		8414E0C01C8D84900019E433 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8414E0D11C8D84900019E433 /* Info.plist */,
 				8414E0C11C8D84900019E433 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,6 +147,41 @@
 				8414E0E71C8D84900019E433 /* Info.plist */,
 			);
 			path = "MVVM-ReactiveCocoaUITests";
+			sourceTree = "<group>";
+		};
+		8414E0F31C8D87C90019E433 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8414E0CC1C8D84900019E433 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8414E0F41C8D87D30019E433 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8414E0C91C8D84900019E433 /* Main.storyboard */,
+				8414E0CE1C8D84900019E433 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		8414E0F51C8D88D40019E433 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8414E0FA1C8D89A00019E433 /* YJViewController.h */,
+				8414E0FB1C8D89A00019E433 /* YJViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		8414E0F61C8D89510019E433 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8414E0F71C8D89910019E433 /* YJViewModel.h */,
+				8414E0F81C8D89910019E433 /* YJViewModel.m */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		ADA215DFF8FC92853183F797 /* Pods */ = {
@@ -223,6 +265,7 @@
 		8414E0B51C8D84900019E433 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YJ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "阳君";
 				TargetAttributes = {
@@ -326,6 +369,8 @@
 			files = (
 				8414E0C51C8D84900019E433 /* AppDelegate.m in Sources */,
 				8414E0C21C8D84900019E433 /* main.m in Sources */,
+				8414E0F91C8D89910019E433 /* YJViewModel.m in Sources */,
+				8414E0FC1C8D89A00019E433 /* YJViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
