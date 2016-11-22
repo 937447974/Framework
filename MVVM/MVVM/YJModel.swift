@@ -14,7 +14,7 @@ import Foundation
 /// 模型层的协议
 protocol YJModelProtocol {
     
-    func execute(model: YJModel)
+    func execute(_ model: YJModel)
     
 }
 
@@ -36,7 +36,7 @@ class YJModel: NSObject {
         if self.data == nil {
             self.data = Dictionary()
         }
-        self.data!["qq"] = "937447974"
+        self.data!["qq"] = "937447974" as AnyObject?
         print("服务器数据处理完毕，回发中...")
         print("Model收到服务器发回的数据，通知上一层")
         print("Model End============")

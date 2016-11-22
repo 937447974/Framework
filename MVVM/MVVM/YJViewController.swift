@@ -25,7 +25,7 @@ class YJViewController: UIViewController, YJViewModelProtocol {
     }
     
     // MARK: - YJViewModelProtocol
-    func execute(viewModel: YJViewModel) {
+    func execute(_ viewModel: YJViewModel) {
         print("\nView层收到Presenter层通知")
         self.name.text = viewModel.name
         print("View End------------")

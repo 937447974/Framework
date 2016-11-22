@@ -15,12 +15,12 @@ import UIKit
 protocol YJViewModelProtocol {
     
     // 定义一系列通知UI的接口
-    func execute(viewModel: YJViewModel)
+    func execute(_ viewModel: YJViewModel)
     
 }
 
 /// ViewModel完全把Model和View进行了分离，主要的程序逻辑在ViewModel里实现。
-public class YJViewModel: YJModelProtocol {
+open class YJViewModel: YJModelProtocol {
     
     /// 姓名
     var name: String?
@@ -34,13 +34,13 @@ public class YJViewModel: YJModelProtocol {
         // 向服务器发送数据
         let model = YJModel()
         model.data = Dictionary()
-        model.data!["name"] = "阳君"
+        model.data!["name"] = "阳君" as AnyObject?
         model.delegate = self // 当前类接收数据
         print("开始请求Model层获取数据")
         model.sendRequest()
     }
     
-    func execute(model: YJModel) {
+    func execute(_ model: YJModel) {
         print("\nViewModel层收到Model层数据：\(model.data)")
         self.name = model.data?["name"] as? String
         print("ViewModel层通知UI层，数据已准备")
