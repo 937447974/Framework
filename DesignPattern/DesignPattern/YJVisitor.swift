@@ -14,20 +14,20 @@ import Cocoa
 /// VisitableProtocol定义一个Accept操作，它以一个访问者为参数。
 private protocol VisitableProtocol {
     
-    func accept(visitor: VisitorProtocol)
+    func accept(_ visitor: VisitorProtocol)
     
 }
 
 /// FloatElement实现VisitableProtocol操作，该操作以一个访问者为参数
 private class FloatElement: VisitableProtocol {
     
-    private var fe:Float
+    fileprivate var fe:Float
     
     init(fe:Float) {
         self.fe = fe
     }
     
-    func accept(visitor: VisitorProtocol) {
+    func accept(_ visitor: VisitorProtocol) {
         visitor.visitFloat(self)
     }
     
@@ -36,13 +36,13 @@ private class FloatElement: VisitableProtocol {
 /// StringElement实现VisitableProtocol操作，该操作以一个访问者为参数
 private class StringElement: VisitableProtocol {
     
-    private var se:String
+    fileprivate var se:String
     
     init(se:String) {
         self.se = se
     }
     
-    func accept(visitor: VisitorProtocol) {
+    func accept(_ visitor: VisitorProtocol) {
         visitor.visitString(self)
     }
     
@@ -53,26 +53,26 @@ private class StringElement: VisitableProtocol {
 /// VisitorProtocol为该对象结构中ConcreteElement的每一个类声明一个Visit操作
 private protocol VisitorProtocol {
     
-    func visitString(stringE: StringElement)
+    func visitString(_ stringE: StringElement)
     
-    func visitFloat(floatE: FloatElement)
+    func visitFloat(_ floatE: FloatElement)
     
-    func visitCollection(collection: Array<VisitableProtocol>)
+    func visitCollection(_ collection: Array<VisitableProtocol>)
     
 }
 
 /// ConcreteVisitor实现每个由Visitor声明的操作
 private class ConcreteVisitor: VisitorProtocol {
     
-    func visitFloat(floatE: FloatElement) {
+    func visitFloat(_ floatE: FloatElement) {
         print(floatE.fe)
     }
     
-    func visitString(stringE: StringElement) {
+    func visitString(_ stringE: StringElement) {
         print(stringE.se)
     }
     
-    func visitCollection(collection: Array<VisitableProtocol>) {
+    func visitCollection(_ collection: Array<VisitableProtocol>) {
         for visitable in collection {
             visitable.accept(self)
         }

@@ -14,7 +14,7 @@ import Cocoa
 /// FlyweightProtocol:描述一个协议，通过这个协议flyweight可以接受并作用于外部状态。
 private protocol FlyweightProtocol {
     
-    func action(arg: Int)
+    func action(_ arg: Int)
     
 }
 
@@ -24,7 +24,7 @@ private class Flyweight: FlyweightProtocol {
     // ConcreteFlyweight对象必须是可共享的。它所存储的状态必须是内部的；
     // 即，它必须独立于ConcreteFlyweight对象的场景。
     
-    func action(arg: Int) {
+    func action(_ arg: Int) {
         print("参数值: \(arg)")
     }
     
@@ -35,14 +35,14 @@ private class Flyweight: FlyweightProtocol {
 /// FlyweightFactory创建并管理flyweight对象
 private class FlyweightFactory  {
     
-    private static var flyweights = Dictionary<String, FlyweightProtocol>()
+    fileprivate static var flyweights = Dictionary<String, FlyweightProtocol>()
     
     init(arg:String){
         FlyweightFactory.flyweights[arg] = Flyweight()
     }
     
     // MARK: 获取Flyweight类
-    class func getFlyweight(key:String) -> FlyweightProtocol {
+    class func getFlyweight(_ key:String) -> FlyweightProtocol {
         if (self.flyweights[key] == nil) {
             self.flyweights[key] = Flyweight()
         }

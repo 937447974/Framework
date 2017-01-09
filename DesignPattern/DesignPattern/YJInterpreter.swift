@@ -14,20 +14,20 @@ import Cocoa
 /// 声明一个抽象的解释操作，这个协议为抽象语法树中所有的节点所共享
 private protocol ExpressionProtocol {
     
-    func interpret(context: Context)
+    func interpret(_ context: Context)
     
 }
 
 private class AdvanceExpression: ExpressionProtocol {
     
-    func interpret(context: Context){
+    func interpret(_ context: Context){
         print("\(context.content) 这是高级解析器!")
     }
 }
 
 private class SimpleExpression: ExpressionProtocol {
     
-    func interpret(context: Context) {
+    func interpret(_ context: Context) {
         print("\(context.content) 这是普通解析器!")
     }
     
@@ -44,7 +44,7 @@ private class Context {
     var list: [ExpressionProtocol] = []
     
     // MARK: 增加
-    func add(expression: ExpressionProtocol) {
+    func add(_ expression: ExpressionProtocol) {
         self.list.append(expression)
     }
     

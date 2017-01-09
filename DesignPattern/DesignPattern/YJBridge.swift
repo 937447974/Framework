@@ -14,14 +14,14 @@ import Cocoa
 /// Clothing定义实现类的协议，该协议不一定要与PersonBr的协议完全一致
 private protocol Clothing {
     
-    func personDressCloth(person:Person)
+    func personDressCloth(_ person:Person)
     
 }
 
 /// Trouser实现Clothing协议并定义它的具体实现。
 private class Trouser: Clothing {
     
-    func personDressCloth(person: Person) {
+    func personDressCloth(_ person: Person) {
         print("\(person.type)穿裤子");
     }
     
@@ -30,7 +30,7 @@ private class Trouser: Clothing {
 /// Clothes实现Clothing协议并定义它的具体实现
 private class Clothes: Clothing {
     
-    func personDressCloth(person: Person) {
+    func personDressCloth(_ person: Person) {
         print("\(person.type)穿衣服");
     }
     

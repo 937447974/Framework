@@ -28,7 +28,7 @@ private class Caretaker {
 /// Originator原发器创建一个备忘录,用以记录当前时刻它的内部状态。使用备忘录恢复内部状态
 private class Originator {
     
-    private var state: String?
+    fileprivate var state: String?
     
     // MARK: 数据封装
     func createMemento() -> Memento {
@@ -38,7 +38,7 @@ private class Originator {
     }
     
     // MARK: 将数据重新导入
-    func setMemento(memento: Memento) {
+    func setMemento(_ memento: Memento) {
         self.state = memento.state
     }
     

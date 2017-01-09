@@ -87,7 +87,7 @@ private class ManBuilder: PersonBuilder {
 private class PersonDirector {
     
     // MARK: 通过装配器构造人员对象
-    func constructPerson(pb:PersonBuilder) -> Person {
+    func constructPerson(_ pb:PersonBuilder) -> Person {
         pb.buildHead()
         pb.buildBody()
         pb.buildFoot()

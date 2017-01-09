@@ -14,14 +14,14 @@ import Cocoa
 /// PolicemanProtocol（观察者）为那些在目标发生改变时需获得通知的对象定义一个更新协议。
 private protocol PolicemanProtocol {
     
-    func action(citizen:Citizen)
+    func action(_ citizen:Citizen)
     
 }
 
 /// HuangPuPoliceman具体观察者
 private class HuangPuPoliceman: PolicemanProtocol {
     
-    func action(citizen: Citizen) {
+    func action(_ citizen: Citizen) {
         switch (citizen.help) {
         case "normal":
             print("一切正常, 不用出动!")
@@ -36,7 +36,7 @@ private class HuangPuPoliceman: PolicemanProtocol {
 /// HuangPuPoliceman具体观察者
 private class TianHePoliceman: PolicemanProtocol {
     
-    func action(citizen: Citizen) {
+    func action(_ citizen: Citizen) {
         switch (citizen.help) {
         case "normal":
             print("一切正常, 不用出动!")
@@ -60,12 +60,12 @@ private class Citizen {
     var help: String = "normal"
     
     // MARK: 子类实现
-    func sendMessage(help: String) {
+    func sendMessage(_ help: String) {
         
     }
     
     // MARK: 注册
-    func register(pol: PolicemanProtocol) {
+    func register(_ pol: PolicemanProtocol) {
         self.pols.append(pol);
     }
     
@@ -79,7 +79,7 @@ private class HuangPuCitizen: Citizen {
         self.register(pol)
     }
     
-    override func sendMessage(help: String) {
+    override func sendMessage(_ help: String) {
         self.help = help
         for pol in self.pols {
             //通知警察行动
@@ -97,7 +97,7 @@ private class TianHeCitizen: Citizen {
         self.register(pol)
     }
     
-    override func sendMessage(help: String) {
+    override func sendMessage(_ help: String) {
         self.help = help
         for pol in self.pols {
             //通知警察行动

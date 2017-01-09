@@ -29,7 +29,7 @@ class YJTest {
     /// - parameter test : YJTestProtocol
     ///
     /// - returns: void
-    func testDesignPattern(test:YJTestProtocol) {
+    func testDesignPattern(_ test:YJTestProtocol) {
         test.test()
     }
     

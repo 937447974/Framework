@@ -15,7 +15,7 @@ import Cocoa
 private protocol MediatorProtocol {
     
     // MARK: 通知
-    func notice(content:String)
+    func notice(_ content:String)
     
 }
 
@@ -23,11 +23,11 @@ private protocol MediatorProtocol {
 private class ConcreteMediator: MediatorProtocol {
     
     /// 员工A
-    private let ca: ColleagueProtocol = ColleagueA()
+    fileprivate let ca: ColleagueProtocol = ColleagueA()
     /// 员工B
-    private let cb: ColleagueProtocol = ColleagueB()
+    fileprivate let cb: ColleagueProtocol = ColleagueB()
     
-    func notice(content: String) {
+    func notice(_ content: String) {
         switch(content) {
         case "boss":// 老板来了, 通知员工A
             print("老板来了...")

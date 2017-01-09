@@ -11,14 +11,14 @@ import Cocoa
 /// 定义一个处理请求的协议
 private protocol RequestHandleProtocol {
     
-    func handleRequest(request: RequestProtocol)
+    func handleRequest(_ request: RequestProtocol)
     
 }
 
 ///  处理它所负责的请求。可访问它的后继者。
 private class HRRequestHandle: RequestHandleProtocol {
     
-    func handleRequest(request: RequestProtocol) {
+    func handleRequest(_ request: RequestProtocol) {
         if request is DimissionRequest {
             print("要离职, 人事审批!")
         }
@@ -36,7 +36,7 @@ private class PMRequestHandle: RequestHandleProtocol {
         self.rh = requestHandle
     }
     
-    func handleRequest(request: RequestProtocol) {
+    func handleRequest(_ request: RequestProtocol) {
         if request is AddMoneyRequest {
             print("要加薪, 项目经理审批!")
         } else {
@@ -54,7 +54,7 @@ private class TLRequestHandle: RequestHandleProtocol {
         self.rh = requestHandle
     }
     
-    func handleRequest(request: RequestProtocol) {
+    func handleRequest(_ request: RequestProtocol) {
         if request is LeaveRequest {
             print("要请假, 项目组长审批!")
         } else {

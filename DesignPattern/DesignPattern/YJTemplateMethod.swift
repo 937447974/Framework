@@ -22,7 +22,7 @@ private class Template {
     // MARK: 原始方法
     func update() {
         print("开始打印")
-        for (var i = 0; i < 3; i++) {
+        for _ in 0 ..< 3 {
             self.println()
         }
     }

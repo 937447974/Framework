@@ -25,17 +25,17 @@ private class Employer {
     }
     
     // MARK: 增加
-    func add(employer:Employer){
+    func add(_ employer:Employer){
         
     }
     
     // MARK: 删除
-    func delete(employer:Employer){
+    func delete(_ employer:Employer){
         
     }
     
     // MARK: 比较是否相等
-    func equal(employer:Employer) ->Bool {
+    func equal(_ employer:Employer) ->Bool {
         if employer.name == self.name {
             return true
         }
@@ -73,14 +73,14 @@ private class ProjectManager: Employer {
         super.employers = []
     }
     
-    override func add(employer: Employer) {
+    override func add(_ employer: Employer) {
         super.employers.append(employer)
     }
     
-    override func delete(employer: Employer) {
-        for(var i = 0; i < super.employers.count; i++) {
+    override func delete(_ employer: Employer) {
+        for i in 0 ..< super.employers.count {
             if employer.equal(super.employers[i]) {
-                super.employers.removeAtIndex(i)
+                super.employers.remove(at: i)
                 return
             }
         }

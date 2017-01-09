@@ -16,11 +16,11 @@ private protocol ListProtocol {
     
     func iterator() -> IteratorProtocol
     
-    func get(index:Int) -> AnyObject
+    func get(_ index:Int) -> AnyObject
     
     func getSize() -> Int
     
-    func add(obj:AnyObject)
+    func add(_ obj:AnyObject)
     
 }
 
@@ -28,17 +28,17 @@ private protocol ListProtocol {
 private class List: ListProtocol {
     
     /// 数组
-    private var list:[AnyObject] = []
+    fileprivate var list:[AnyObject] = []
     /// 位置
-    private var index:Int = 0
+    fileprivate var index:Int = 0
     /// 长度
-    private var size:Int = 0
+    fileprivate var size:Int = 0
     
     func iterator() -> IteratorProtocol {
         return Iterator(list: self)
     }
     
-    func get(index:Int) ->AnyObject {
+    func get(_ index:Int) ->AnyObject {
         return list[index]
     }
     
@@ -46,7 +46,7 @@ private class List: ListProtocol {
         return size
     }
     
-    func add(obj:AnyObject) {
+    func add(_ obj:AnyObject) {
         list.append(obj)
         index += 1
         size += 1
@@ -69,9 +69,9 @@ private protocol IteratorProtocol {
 private class Iterator: IteratorProtocol {
     
     /// 数组
-    private var list:List
+    fileprivate var list:List
     /// 位置
-    private var index:Int
+    fileprivate var index:Int
     
     init(list:List) {
         self.index = 0
@@ -97,9 +97,9 @@ class YJIterator: YJTestProtocol {
 
     func test() {
         let list = List()
-        list.add("a")
-        list.add("b")
-        list.add("c")
+        list.add("a" as AnyObject)
+        list.add("b" as AnyObject)
+        list.add("c" as AnyObject)
         //第一种迭代方式
         let it = list.iterator();
         while (it.hasNext()) {
@@ -107,7 +107,7 @@ class YJIterator: YJTestProtocol {
         }
         print("===========")
         //第二种迭代方式
-        for (var i = 0; i < list.getSize(); i++) {
+        for i in 0 ..< list.getSize() {
             print(list.get(i));
         }
     }
