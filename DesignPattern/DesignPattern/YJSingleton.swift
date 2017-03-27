@@ -26,10 +26,8 @@ private class Singleton  {
 class YJSingleton: YJTestProtocol {
     
     func test() {
-        var singleton = Singleton.shared
-        print(singleton)
-        singleton = Singleton.shared
-        print(singleton)
+        print(Singleton.shared)
+        print(Singleton.shared)
     }
     
 }
