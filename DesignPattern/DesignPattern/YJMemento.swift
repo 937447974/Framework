@@ -44,7 +44,7 @@ private class Originator {
     
     // MARK: 显示
     func showState() {
-        print(self.state)
+        print("\(self.state)")
     }
 }
 

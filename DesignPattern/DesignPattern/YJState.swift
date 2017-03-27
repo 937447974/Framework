@@ -54,11 +54,11 @@ class YJState: YJTestProtocol {
 
     func test() {
         let ctx = Context()
-        print(ctx.weatherMessage())
+        print("\(ctx.weatherMessage())")
         ctx.weather = Sunshine()
-        print(ctx.weatherMessage())
+        print("\(ctx.weatherMessage())")
         // 改变状态
         ctx.weather = Rain()
-        print(ctx.weatherMessage())
+        print("\(ctx.weatherMessage())")
     }
 }
